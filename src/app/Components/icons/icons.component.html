@@ -1,0 +1,20 @@
+<div class="icons">
+    <button mat-icon-button><img src="assets/remind.svg"></button>
+    <button mat-icon-button><img src="assets/collaborator.svg"></button>
+    <button mat-icon-button [matMenuTriggerFor]="paletteMenu"><img src="assets/paint.svg"></button>
+    <button mat-icon-button><img src="assets/photo.svg"></button>
+    <button mat-icon-button (click)="OnArchive()"><img src="assets/archive.svg"></button>
+    <button mat-icon-button [matMenuTriggerFor]="moreMenu"><img src="assets/more.svg"></button>
+    <mat-menu #moreMenu="matMenu">
+        <button mat-menu-item (click)="OnDelete()">Delete Notes</button>
+        <button mat-menu-item>Add label</button>
+        <button mat-menu-item>Add a drawing</button>
+        <button mat-menu-item>Make a copy</button>
+        <button mat-menu-item>Show checkboxes</button>
+    </mat-menu>
+    <mat-menu #paletteMenu="matMenu" class="colorMenu">
+        <div *ngFor = 'let colors of colorArray'>
+            <button class="colorIcon" [style.background]="colors.code" (click)="selectColor(colors)"></button>
+        </div>
+    </mat-menu>
+</div>

@@ -1,0 +1,64 @@
+<!-- <div class="login-container">
+    <h2>Login</h2>
+    <form>
+      <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="text" id="Email" name="Email" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+</div> -->
+
+<div class="container">
+  <div>
+    <img src="assets/G_L.png" alt="Google Icon">
+    <h1>Sign in</h1>
+    <p>Use your Google Account</p>
+  </div>
+  <div style="margin-top: 50px;">
+    <form  [formGroup]="loginDataForm" (ngSubmit)="OnLogin()" style="width: 500px;">
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Email" formControlName="email">
+          <mat-error *ngIf="loginDataForm.get('email')?.hasError('required')">Email is required.</mat-error>
+          <mat-error *ngIf="loginDataForm.get('email')?.hasError('email')">Email is not valid.</mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="Password" formControlName="password">
+          <mat-error *ngIf="loginDataForm.get('password')?.hasError('required')">Password is required.</mat-error>
+          <mat-error *ngIf="loginDataForm.get('password')?.hasError('minLength')">Enter Minimum  8 characters</mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <button mat-stroked-button color="primary">Forgot Password?</button>
+      </div>
+      <div class="Create-Login">
+        <button mat-stroked-button color="primary">Create Account</button>
+        <button mat-flat-button color="primary">sign in</button>
+      </div>
+    </form>
+  </div>
+</div>
+<footer class="footer">
+  <select class="option" name="language">
+    <option value="en-US">English (United States)</option>
+    <option value="tel">Telugu</option>
+    <option value="hin">Hindi</option>
+    <option value="tam">Tamil</option>
+    <option value="kan">Kannada</option>
+    <option value="mar">Marati</option>
+  </select>
+  <button mat-button>Help</button>
+  <button mat-button>Privacy</button> 
+  <button mat-button>Terms</button> 
+</footer>
+
+

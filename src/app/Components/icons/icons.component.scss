@@ -1,0 +1,18 @@
+.icons{
+    display: flex;
+    gap: 10px;
+}
+.colorMenu{
+    display: flex;
+    gap: 20px;
+}
+.colorIcon{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    border: none;
+}
+.colorIcon:hover{
+    cursor: pointer;
+    border: 2px solid black;
+}

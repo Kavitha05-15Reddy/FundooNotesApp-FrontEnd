@@ -1,0 +1,29 @@
+<!-- 2)Create a new component named event-handling-demo.
+Add a button to the component template.
+Implement a method in the component class that displays an alert when the button is clicked.
+Bind the button's click event to the method. -->
+
+
+<form>
+    <div class="input">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Name">
+    </div>
+    <div>
+        <label for="age">Age:</label>
+        <input type="text" placeholder="age">
+    </div>
+    <div>
+        <label for="state">State:</label>
+        <input type="text" placeholder="state">
+    </div>
+    <div>
+        <label for="country">Country:</label>
+        <input type="text" placeholder="country">
+    </div>
+    <div>
+        <button class="alert" (click)="showalert()" type="submit">Submit</button>
+    </div>
+    </div>
+</form>

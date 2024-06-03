@@ -1,0 +1,17 @@
+<div>
+    <mat-card [style.background]="data.color">
+        <mat-card-title class="title">
+            <input [(ngModel)]="title">
+            <button mat-icon-button><img src="assets/pin.svg"></button>
+        </mat-card-title>
+        <mat-card-content>
+            <div>
+                <input [(ngModel)]="description">
+            </div>
+        </mat-card-content>
+        <div class="icons">
+            <app-icons></app-icons>
+            <button mat-button (click)="closeDialogBox()">Close</button>
+        </div>
+    </mat-card>
+</div>

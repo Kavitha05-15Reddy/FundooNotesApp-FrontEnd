@@ -1,0 +1,21 @@
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+input{
+    background: none;
+    border: none;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 450;
+    font-size: 16px;
+    color: #202124;
+    padding: 12px 16px 12px 16px;
+    width: calc(33.33% - 20px); 
+}
+.icons{
+    display: flex;
+    gap: 200px;
+}

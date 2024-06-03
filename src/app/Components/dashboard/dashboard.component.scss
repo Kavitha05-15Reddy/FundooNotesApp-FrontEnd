@@ -1,0 +1,71 @@
+mat-toolbar{
+    display: block;
+    border: 1px solid #ccc;
+    background-color: rgba(255,255,255,1);
+    align-items: center;
+}
+#keep{
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+span{
+    color: #5f6368;
+    display: inline-block;
+    font-family: "Product Sans", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 24px;
+    cursor: pointer;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px thistle #ccc;
+    background-color:white;
+    box-shadow:  0 2px 3px rgba(0, 0, 0, 0.2);
+    height: 38px;
+    width: 48%;
+    margin: 0 90px;
+}
+.search {
+    margin: 0 5px;
+}
+.search-box input {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font: normal 16px Google Sans, Roboto, Helvetica, Arial, sans-serif;
+}
+.close{
+    margin-left: auto;
+}
+.end{
+    margin-left: 200px;
+}
+mat-sidenav{
+    padding-top: 1px;
+    width: 280px;
+    padding-left: 5px;
+    border: none;
+}
+mat-nav-list a{
+    box-sizing: border-box;
+    border-radius: 0 25px 25px 0;
+    display: flex;
+    align-items: center;
+}
+mat-nav-list a:hover{
+    background-color: #feefc3;
+    cursor: pointer;
+}
+mat-label{
+    padding-left: 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+

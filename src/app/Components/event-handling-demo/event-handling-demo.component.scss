@@ -1,0 +1,23 @@
+form{
+    height: 200px;
+    width: 300px;
+    margin: 100px;
+    margin-left: 600px;
+    background-color: antiquewhite;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.input{
+   margin: 30px;
+}
+.alert{
+    height: 20px;
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.alert:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+}

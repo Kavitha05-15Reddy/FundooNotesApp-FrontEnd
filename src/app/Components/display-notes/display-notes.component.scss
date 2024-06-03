@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 40px;  
+}  
+.card {
+    width: calc(33.33% - 20px); 
+    margin-bottom: 20px;
+}
+mat-card{
+    border-radius: 20px;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-top: 10px;
+}

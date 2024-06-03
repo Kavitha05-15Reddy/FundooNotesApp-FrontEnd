@@ -1,0 +1,17 @@
+<div class="container">
+    <div *ngFor="let notes of notesList | filter:filterNote" class="card">
+        <mat-card [style.background]="notes.color">
+            <mat-card-title class="title" (click)="editNoteDialogBox(notes)">
+                {{notes.title}}
+                <button mat-icon-button><img src="assets/pin.svg"></button>
+            </mat-card-title>
+            <mat-card-content>
+                <div (click)="editNoteDialogBox(notes)">{{notes.description}}</div>
+                <div>{{notes.notesId}}</div>
+            </mat-card-content>
+            <div>
+                <app-icons [notesObject]="notes"></app-icons>
+            </div>
+        </mat-card>
+    </div>
+</div>

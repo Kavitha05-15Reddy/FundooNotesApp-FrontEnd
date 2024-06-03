@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 300px;
+}
+.input{
+    margin: 30px;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 500px;
+    width: 400px;
+    background-color: antiquewhite;
+}
+.output{
+    margin: 30px;
+    margin-top: 100px;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    background-color: beige;
+}
+.c1{
+    background-color: aqua;
+}
+.c2{
+    background-color: blue;
+}

@@ -1,0 +1,17 @@
+<!-- 1)Create a new component named directives-demo.
+Use *ngIf to conditionally display a message based on a boolean variable.
+Use *ngFor to loop through an array of strings and display each item in a list. -->
+
+<div class="container">
+    <div class="input">
+    <h1>Show List of items</h1>
+    <div *ngIf="showMessage">
+        <p>List of {{list}}</p>
+        <ul>
+            <li *ngFor="let fruit of fruits">{{ fruit }}</li>
+        </ul>
+    </div>
+    <button class="save" (click)="onSubmit()">Submit</button>
+    </div>
+</div>
+

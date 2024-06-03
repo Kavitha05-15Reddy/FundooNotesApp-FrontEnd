@@ -1,0 +1,21 @@
+.container{
+    margin: 100px;
+    margin-left: 600px;
+    height: 300px;
+    width: 400px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+.input{
+    margin: 30px;
+    margin-left: 100px;
+}
+.save{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.save:hover{
+    background-color: aqua;
+    cursor: pointer;
+}

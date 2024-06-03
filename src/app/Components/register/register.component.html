@@ -1,0 +1,67 @@
+<div class="container">
+    <div style="padding: 20px;">
+        <img class="icon" src="assets/google.png" alt="Google Icon">
+        <h1 style="color: #1f1f1f; font-size: x-large; margin-top: -20px;">Create your Google Account</h1>
+        <form [formGroup]="registerDataForm" (ngSubmit)="OnRegister()" style="width: 500px;">
+            <div>
+            <mat-form-field appearance="outline" style="width: 45%;">
+                <mat-label>First name</mat-label>
+                <input matInput placeholder="First name" formControlName="firstName">
+                <mat-error *ngIf="registerDataForm.get('firstName')?.hasError('required')">FirstName is required.</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline" style="margin-left: 30px; width: 45%;">
+                <mat-label>Last name</mat-label>
+                <input matInput placeholder="Last name" formControlName="lastName">
+                <mat-error *ngIf="registerDataForm.get('lastName')?.hasError('required')">LastName is required.</mat-error>
+            </mat-form-field>
+            </div>
+            <div>
+            <mat-form-field appearance="outline" style="width: 96%;">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Email" formControlName="email">
+                <mat-error *ngIf="registerDataForm.get('email')?.hasError('required')">Email is required.</mat-error>
+            </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="outline" style="width: 45%;">
+                    <mat-label>Password</mat-label>
+                    <input matInput placeholder="Password" formControlName="password">
+                    <mat-error *ngIf="registerDataForm.get('password')?.hasError('required')">Password is required.</mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="outline" style="margin-left: 30px; width: 45%;">
+                    <mat-label>Confirm</mat-label>
+                    <input matInput placeholder="Confirm" formControlName="password">
+                    <mat-error *ngIf="registerDataForm.get('password')?.hasError('required')">Confirm Password is required.</mat-error>
+                </mat-form-field>
+                <p style="margin-top: -15px;color: #585757;">Use 8 or more characters with a mix of letters, numbers & symbols</p>
+            </div>
+            <section>
+                <mat-checkbox>Show Password</mat-checkbox>
+            </section>
+            <div class="Create-Login">
+            <button mat-stroked-button color="primary">Sign in instead</button>
+            <button mat-flat-button color="primary">Create</button>
+            </div>
+        </form>
+    </div>
+    <div style="padding: 50px;">
+        <img src="assets/Create.jpg" alt="">
+        <h1 style="color: rgb(60, 61, 61); margin-left: 50px;">One account.All of Google working for you.</h1>
+    </div>
+</div>
+<footer class="footer">
+    <select class="option" name="language">
+        <option value="en-US">English (United States)</option>
+        <option value="tel">Telugu</option>
+        <option value="hin">Hindi</option>
+        <option value="tam">Tamil</option>
+        <option value="kan">Kannada</option>
+        <option value="mar">Marati</option>
+    </select>
+    <button mat-button>Help</button>
+    <button mat-button>Privacy</button> 
+    <button mat-button>Terms</button> 
+  </footer>
+  
+  
+  
